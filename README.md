@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Проект MUI
 
-## Getting Started
+Это проект на Next.js, который использует Material-UI (MUI) для создания пользовательских интерфейсов. Проект настроен с необходимыми зависимостями и скриптами для облегчения разработки, сборки и линтинга.
 
-First, run the development server:
+## Содержание
 
+- [Установка](#установка)
+- [Скрипты](#скрипты)
+- [Зависимости](#зависимости)
+- [Разработка](#разработка)
+
+## Установка
+
+Чтобы начать работу с этим проектом, клонируйте репозиторий и установите зависимости:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/denizho/web_app_frontend.git
+  cd mui
+  npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Скрипты
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Этот проект включает несколько npm-скриптов для помощи в разработке:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **dev**: Запускает сервер разработки.
+```bash
+  npm run dev
+```
+- **build**: Собирает приложение для продакшена.
+```bash
+  npm run build
+```
+- **start**: Запускает сервер в режиме продакшена.
+```bash
+  npm run start
+```
+- **lint**: Запускает линтер для проверки качества кода.
+```bash
+  npm run lint
+```
+## Зависимости
 
-## Learn More
+Этот проект использует следующие зависимости:
 
-To learn more about Next.js, take a look at the following resources:
+- @emotion/react: Библиотека для написания CSS-стилей с помощью JavaScript.
+- @emotion/styled: Библиотека для создания стилизованных компонентов.
+- @fontsource/roboto: Пакет для включения шрифта Roboto.
+- @mui/material: Основная библиотека Material-UI для React.
+- axios: HTTP-клиент на основе промисов для выполнения запросов.
+- next: Фреймворк React для серверного рендеринга и генерации статических сайтов.
+- react: Библиотека JavaScript для создания пользовательских интерфейсов.
+- react-dom: Пакет, который служит точкой входа в DOM и рендереры сервера для React.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Зависимости для разработки
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- nodemon: Утилита, которая отслеживает изменения в вашем исходном коде и автоматически перезапускает сервер.
 
-## Deploy on Vercel
+## Разработка
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Чтобы начать разработку, выполните следующую команду для запуска сервера разработки:
+```bash
+  npm run dev
+```
+Затем вы можете открыть браузер и перейти по адресу [http://localhost:3000](http://localhost:3000), чтобы увидеть приложение в действии.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Ссылка на Backend
+
+[Перейти к Backend](https://github.com/denizho/web_app_backend)
