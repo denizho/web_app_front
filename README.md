@@ -12,8 +12,7 @@
 ## Установка
 
 Чтобы начать работу с этим проектом, клонируйте репозиторий и установите зависимости:
-```
-bash
+```bash
   git clone github.com/denizho/web_app_frontend
   cd mui
   npm install
