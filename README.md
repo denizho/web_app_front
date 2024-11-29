@@ -13,7 +13,7 @@
 
 Чтобы начать работу с этим проектом, клонируйте репозиторий и установите зависимости:
 ```bash
-  git clone github.com/denizho/web_app_frontend
+  git clone https://github.com/denizho/web_app_frontend.git
   cd mui
   npm install
 ```
@@ -62,4 +62,7 @@
   npm run dev
 ```
 Затем вы можете открыть браузер и перейти по адресу [http://localhost:3000](http://localhost:3000), чтобы увидеть приложение в действии.
-  
+
+## Ссылка на Backend
+
+[Перейти к Backend](https://github.com/denizho/web_app_backend)
