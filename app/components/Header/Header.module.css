@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(33, 155, 255);
+  padding: 15px;
+}
+.header h3 {
+  color: white;
+  text-decoration: none;
+}
+.logo {
+  text-decoration: none;
+}
