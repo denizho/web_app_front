@@ -368,7 +368,7 @@ const HomePage = () => {
           <Button
             onClick={handleOrder}
             color="primary"
-            disabled={!selectedEnterprise} // Дизаблируем кнопку, если предприятие не выбрано
+            disabled={!selectedEnterprise}
           >
             Подтвердить
           </Button>

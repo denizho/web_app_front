@@ -18,15 +18,15 @@ const ProductTable = ({ products, addToCart, stockInfo }) => {
   const handleQuantityChange = (productId, newValue) => {
     setLocalQuantities((prev) => ({
       ...prev,
-      [productId]: Math.max(1, newValue), // Устанавливаем минимум 1
+      [productId]: Math.max(1, newValue),
     }));
   };
 
   const handleAddToCart = (product) => {
-    const amountToAdd = localQuantities[product.id] || 1; // Устанавливаем значение по умолчанию на 1
+    const amountToAdd = localQuantities[product.id] || 1;
     if (amountToAdd >= 1) {
       addToCart(product, amountToAdd);
-      setLocalQuantities((prev) => ({ ...prev, [product.id]: 1 })); // Сбрасываем количество на 1 после добавления в корзину
+      setLocalQuantities((prev) => ({ ...prev, [product.id]: 1 }));
     }
   };
 
@@ -59,7 +59,7 @@ const ProductTable = ({ products, addToCart, stockInfo }) => {
                 <TableCell sx={{ textAlign: "center" }}>
                   <TextField
                     type="number"
-                    value={localQuantities[product.id] || 1} // Устанавливаем начальное значение на 1
+                    value={localQuantities[product.id] || 1}
                     onChange={(e) => {
                       const newValue = Number(e.target.value);
                       if (newValue >= 1 && newValue <= availableQuantity) {

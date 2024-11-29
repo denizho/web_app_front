@@ -47,7 +47,7 @@ const Categories = () => {
       });
       setSnackbarMessage("Категория успешно добавлена!");
       setSnackbarSeverity("success");
-      fetchCategories(); // Обновляем список после добавления
+      fetchCategories();
     } catch (error) {
       setSnackbarMessage("Ошибка при добавлении категории.");
       setSnackbarSeverity("error");
@@ -68,7 +68,7 @@ const Categories = () => {
       );
       setSnackbarMessage("Категория успешно отредактирована!");
       setSnackbarSeverity("success");
-      fetchCategories(); // Обновляем список после редактирования
+      fetchCategories();
     } catch (error) {
       setSnackbarMessage("Ошибка при редактировании категории.");
       setSnackbarSeverity("error");
@@ -86,7 +86,7 @@ const Categories = () => {
         await axios.delete(`http://localhost:5000/categories/${id}`);
         setSnackbarMessage("Категория успешно удалена!");
         setSnackbarSeverity("success");
-        fetchCategories(); // Обновляем список после удаления
+        fetchCategories();
       } catch (error) {
         setSnackbarMessage("Ошибка при удалении категории.");
         setSnackbarSeverity("error");

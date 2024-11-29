@@ -49,7 +49,7 @@ const Predprs = () => {
       });
       setSnackbarMessage("Предприятие успешно добавлено!");
       setSnackbarSeverity("success");
-      fetchPredprs(); // Обновляем список после добавления
+      fetchPredprs();
     } catch (error) {
       setSnackbarMessage("Ошибка при добавлении предприятия.");
       setSnackbarSeverity("error");
@@ -69,7 +69,7 @@ const Predprs = () => {
       });
       setSnackbarMessage("Предприятие успешно отредактировано!");
       setSnackbarSeverity("success");
-      fetchPredprs(); // Обновляем список после редактирования
+      fetchPredprs();
     } catch (error) {
       setSnackbarMessage("Ошибка при редактировании предприятия.");
       setSnackbarSeverity("error");
@@ -88,7 +88,7 @@ const Predprs = () => {
         await axios.delete(`http://localhost:5000/predpr/${id}`);
         setSnackbarMessage("Предприятие успешно удалено!");
         setSnackbarSeverity("success");
-        fetchPredprs(); // Обновляем список после удаления
+        fetchPredprs();
       } catch (error) {
         setSnackbarMessage("Ошибка при удалении предприятия.");
         setSnackbarSeverity("error");

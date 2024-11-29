@@ -74,7 +74,7 @@ const Orders = () => {
         await axios.delete(`http://localhost:5000/orders/${id}`);
         setSnackbarMessage("Заказ успешно удален!");
         setSnackbarSeverity("success");
-        fetchOrders(); // Обновляем список после удаления
+        fetchOrders();
       } catch (error) {
         setSnackbarMessage("Ошибка при удалении заказа.");
         setSnackbarSeverity("error");
@@ -109,7 +109,6 @@ const Orders = () => {
               <TableCell sx={{ textAlign: "center" }}>Количество</TableCell>
               <TableCell sx={{ textAlign: "center" }}>Стоимость</TableCell>
               <TableCell
-                sx={{ textAlign: "center" }}
                 sx={{ textAlign: "center" }}
                 style={{ minWidth: "100px", textAlign: "center" }}
               >

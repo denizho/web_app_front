@@ -63,7 +63,7 @@ const Sklad = () => {
       });
       setSnackbarMessage("Запись успешно добавлена!");
       setSnackbarSeverity("success");
-      fetchData(); // Обновляем список после добавления
+      fetchData();
     } catch (error) {
       setSnackbarMessage(
         "Ошибка при добавлении записи: " +
@@ -87,7 +87,7 @@ const Sklad = () => {
       });
       setSnackbarMessage("Запись успешно изменена!");
       setSnackbarSeverity("success");
-      fetchData(); // Обновляем список после редактирования
+      fetchData();
     } catch (error) {
       setSnackbarMessage(
         "Ошибка при редактировании записи: " +
@@ -109,7 +109,7 @@ const Sklad = () => {
         await axios.delete(`http://localhost:5000/sklad/${id}`);
         setSnackbarMessage("Запись успешно удалена!");
         setSnackbarSeverity("success");
-        fetchData(); // Обновляем список после удаления
+        fetchData();
       } catch (error) {
         setSnackbarMessage(
           "Ошибка при удалении записи: " +
